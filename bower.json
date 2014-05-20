@@ -1,0 +1,21 @@
+{
+  "name": "m4dz.dev",
+  "version": "0.1.0",
+  "authors": [
+    "M4D'z <code@m4dz.net>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://m4dz.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-scss": "~3.0.1"
+  }
+}
