@@ -1,0 +1,201 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font: 1em/1.5 $base-font-stack;
+  background-color: $light;
+  color: $dark;
+}
+
+a {
+
+  &:link,
+  &:visited {
+    color: $highlight;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($highlight, 20%);
+  }
+}
+
+abbr {
+  cursor: help;
+}
+
+blockquote {
+  font-style: italic;
+
+  em {
+    font-style: normal;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.2em;
+
+  @media (max-width: em($medium-mq)) {
+    font-size: 1em;
+  }
+
+  b, em {
+    display: block;
+  }
+
+  b {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: $highlight;
+  }
+
+  em {
+    font-size: 1.2em;
+  }
+}
+
+.container {
+  min-height: 100%;
+  height: inherit;
+
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.col {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1em 1em 0;
+  float: left;
+
+  position: relative;
+  z-index: 5;
+
+  .wrap-inner {
+    max-width: em(370px);
+
+    .left & {
+      margin: 0 0 0 auto;
+    }
+
+    .right & {
+      margin: 0 auto 0 0;
+    }
+  }
+}
+
+.page {
+  blockquote {
+    margin: 0 0 0 em(80px);
+    position: relative;
+
+    &::after {
+      content: "“";
+      display: block;
+      font-size: em(200px);
+      font-style: normal;
+      position: absolute;
+      top: em(-60px, 200px);
+      left: em(-90px, 200px);
+      color: darken($light, 80%);
+    }
+  }
+
+  &.inverted {
+    background-color: $dark;
+    color: $light;
+
+    a {
+      &:link,
+      &:visited {
+        color: $light;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: lighten($highlight, 20%);
+      }
+    }
+  }
+}
+
+footer {
+  font-size: em($footer-font-size);
+
+  a {
+    text-decoration: none;
+    color: $dark;
+
+    &:visited {
+
+    }
+  }
+
+  .legals, .links {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    max-width: 50%;
+  }
+
+  .links {
+    left: auto;
+    right: 1em;
+
+    ul {
+      margin: 0;
+      list-style-type: none;
+    }
+
+    li + li {
+      margin-top: em(6px);
+    }
+
+    a {
+      display: block;
+      width: em($icon-font-size);
+      height: em($icon-font-size);
+
+      color: $light;
+
+      border-radius: 50%;
+
+      &:link,
+      &:visited {
+        background-color: $dark;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $highlight;
+      }
+    }
+
+    i {
+      position: relative;
+
+      display: block;
+      height: 100%;
+      text-indent: -99999px;
+
+      &:before {
+        display: block;
+        position: absolute;
+        top: em(4px);
+        left: em(4px);
+
+        text-indent: 0;
+
+        font-size: em($icon-font-size - 8);
+      }
+    }
+  }
+}

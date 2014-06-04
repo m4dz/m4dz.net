@@ -1,0 +1,24 @@
+header.col,
+.page {
+  padding: 1em;
+  text-align: left;
+}
+
+.vr {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+
+  text-align: center;
+
+  img {
+    width: em($vr-radius-size * 2);
+  }
+}
+
+.page {
+  margin-top: em($vr-radius-size + 5) *-1;
+  padding-top: em($vr-radius-size + 5) +1;
+}

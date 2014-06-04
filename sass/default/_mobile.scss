@@ -1,47 +1,25 @@
-header,
-.page {
+.col {
   float: none;
   width: 100%;
   padding: 1em;
 
   .wrap-inner {
-    float: none;
-    margin: 0 auto;
-  }
-}
-
-header {
-  text-align: left;
-}
-
-.vr {
-  position: relative;
-  top: 0;
-  left: 0;
-  margin: 0;
-  width: 100%;
-
-  text-align: center;
-
-  img {
-    width: em($vr-radius-size * 2);
+    float: none !important;
+    margin: 0 auto !important;
   }
 }
 
 .page {
-  margin-top: em($vr-radius-size + 5) *-1;
-  padding-top: em($vr-radius-size + 5) +1;
-
-  min-height: 0;
-  height: auto;
+  min-height: 0 !important;
+  height: auto !important;
 }
 
 footer {
   box-sizing: border-box;
 
-  position: relative;
-  top: 0;
-  width: 100%;
+  position: relative !important;
+  top: 0 !important;
+  width: 100% !important;
   overflow: hidden;
 
   padding: 1em;
@@ -102,7 +80,7 @@ footer {
     display: block;
     width: 100%;
     height: 1px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 
     background-color: darken($light, 80%);
   }
