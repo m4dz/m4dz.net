@@ -1,0 +1,24 @@
+@import "icomoon";
+
+$base-font-stack: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+[class^="icon-"], [class*=" icon-"] {
+  @include icon;
+}
+
+.icon-github:before {
+  @include icon-github;
+}
+.icon-twitter:before {
+  @include icon-twitter;
+}
+.icon-linkedin:before {
+  @include icon-linkedin;
+  font-size: 0.92em;
+  margin-top: 0.04em;
+  margin-left: 0.04em;
+}
+.icon-mail:before {
+  @include icon-paperplane;
+  margin-left: -0.025em;
+}

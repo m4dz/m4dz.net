@@ -1,0 +1,122 @@
+header,
+.page {
+  float: none;
+  width: 100%;
+  padding: 1em;
+
+  .wrap-inner {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+header {
+  text-align: left;
+}
+
+.vr {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+
+  text-align: center;
+
+  img {
+    width: em($vr-radius-size * 2);
+  }
+}
+
+.page {
+  margin-top: em($vr-radius-size + 5) *-1;
+  padding-top: em($vr-radius-size + 5) +1;
+
+  min-height: 0;
+  height: auto;
+}
+
+footer {
+  box-sizing: border-box;
+
+  position: relative;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+
+  padding: 1em;
+
+  background-color: $dark;
+  color: $light;
+
+  a {
+    &:link,
+    &:visited {
+      color: $light;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: lighten($highlight, 20%);
+    }
+  }
+
+  .links a {
+    color: $dark;
+
+    &:link,
+    &:visited {
+      background-color: $light;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: lighten($highlight, 20%);
+    }
+  }
+
+  &:after {
+    @include icon;
+    @include icon-rocket;
+
+    display: block;
+    position: absolute;
+    top: em(8px);
+    left: 50%;
+    margin-left: em(-10px);
+
+    width: em(20px);
+    height: em(20px);
+
+    font-size: em(20px);
+    text-align: center;
+
+    background-color: $dark;
+    color: $light;
+  }
+
+  &:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 1em;
+
+    background-color: darken($light, 80%);
+  }
+
+  .legals,
+  .links {
+    position: static;
+  }
+
+  .legals {
+    float: left;
+  }
+
+  .links {
+    float: right;
+  }
+}
