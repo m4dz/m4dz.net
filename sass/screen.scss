@@ -1,10 +1,14 @@
-@import "config", "lib/utilities", "lib/fonts";
+@import "config", "lib/utilities", "lib/fonts", "lib/boxes";
 @import "normalize-scss/normalize";
 
 @import "default/desktop";
 
 .homepage {
   @import "homepage/desktop";
+}
+
+.e404 {
+  @import "e404/desktop";
 }
 
 @media (max-width: em($small-mq)) {

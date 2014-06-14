@@ -1,0 +1,38 @@
+@mixin box-cover {
+  .left {
+    padding-top: 13.9em;
+    @media (max-width: em($medium-mq)) {
+      padding-top: 14.5em;
+    }
+
+    text-align: right;
+
+    .wrap-inner {
+      float: right;
+    }
+  }
+
+  .right {
+    min-height: em($large-top-limit, $base-font-size);
+    height: 100%;
+
+    @media (max-width: em($medium-mq)) {
+      min-height: em($medium-top-limit, $base-font-size);
+    }
+  }
+
+  footer {
+    position: absolute;
+    z-index: 0;
+    top: em($large-top-limit, $footer-font-size);
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: em($medium-mq)) {
+      top: em($medium-top-limit, $footer-font-size);
+    }
+
+    width: 50%;
+
+  }
+}

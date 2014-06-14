@@ -1,0 +1,19 @@
+@include box-cover;
+
+.left {
+  p {
+    font-style: italic;
+  }
+}
+
+.rabbithole {
+
+  &:before {
+    @include icon;
+    @include icon-madhatter;
+
+    display: block;
+
+    font-size: em(370px);
+  }
+}
