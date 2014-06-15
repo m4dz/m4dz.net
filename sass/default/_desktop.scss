@@ -77,7 +77,7 @@ h1 {
   position: relative;
   z-index: 5;
 
-  .wrap-inner {
+  .max-w {
     max-width: em(370px);
 
     .left & {

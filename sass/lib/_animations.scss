@@ -1,0 +1,11 @@
+@mixin animate-fadeloop {
+  animation-name: fadeloop;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeloop {
+  0%, 100%   { opacity: 1; }
+  50% { opacity: .35; }
+}

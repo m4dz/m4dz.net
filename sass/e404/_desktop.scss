@@ -7,13 +7,52 @@
 }
 
 .rabbithole {
+  display: block;
 
-  &:before {
+  text-align: center;
+  padding-top: 2.9em;
+
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 350ms;
+  transition-timing-function: ease-out;
+
+  &::before {
     @include icon;
     @include icon-madhatter;
 
     display: block;
-
     font-size: em(370px);
+  }
+
+  &::after {
+    @include icon;
+    @include icon-arrow-down;
+
+    display: block;
+    width: 1.45em;
+    line-height: 1.45em;
+
+    margin: .5em auto;
+
+    font-size: 32px;
+    border: 1px solid $light;
+    border-radius: 50%;
+
+    transition-property: margin-top, border-color;
+    transition-duration: 350ms;
+    transition-timing-function: ease-out;
+
+    @include animate-fadeloop;
+  }
+
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    margin-top: 1.5em;
+    border-color: lighten($highlight, 20%);
+
+    animation-play-state: paused;
   }
 }
