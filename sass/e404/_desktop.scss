@@ -1,9 +1,19 @@
 @include box-cover;
 
+footer {
+  @media (max-width: em($medium-mq)) {
+    top: em($large-top-limit, $footer-font-size);
+  }
+}
+
 .left {
   p {
     font-style: italic;
   }
+}
+
+.right {
+  min-height: em($large-top-limit, $base-font-size);
 }
 
 .rabbithole {
@@ -11,6 +21,9 @@
 
   text-align: center;
   padding-top: 2.9em;
+  @media (max-width: em($medium-mq)) {
+    padding-top: 3.65em;
+  }
 
   text-decoration: none;
 
@@ -24,6 +37,9 @@
 
     display: block;
     font-size: em(370px);
+    @media (max-width: em($medium-mq)) {
+      font-size: em(290px);
+    }
   }
 
   &::after {
