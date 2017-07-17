@@ -356,6 +356,10 @@ pre code {
   h3::selection, h4::selection, h5::selection, h6::selection {
     background-color: rgba(133, 201, 232, 0.3); }
 
+  h3, p, dl {
+    margin-left: 16px;
+    margin-right: 16px; }
+
   code::selection {
     background-color: #333;
     color: #eee; }
