@@ -129,12 +129,10 @@ a {
   a:hover {
     color: #3593d9; }
 
-
 .footnote {
   color: #0d6ea1;
   font-size: .8em;
   vertical-align: super; }
-
 
 dd {
   margin-bottom: 1em; }
@@ -274,7 +272,7 @@ sub {
   vertical-align: sub;
   top: -1px; }
 
-p {
+p, dl {
   font-size: 1.1429em;
   line-height: 1.3125em;
   margin: 1.3125em 0; }
@@ -293,7 +291,30 @@ footer {
   text-align: center;
 }
 
+#contact-me {
+  display: block;
+  width: 50%;
+  margin: 3em auto 0;
+  padding: .8em 1.8em;
+  background-color: #333;
+  color: #ddd;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid #333;
+  border-radius: 3em;
+  text-align: center;
+transition-property: background, color, padding, margin; }
+
+#contact-me:hover {
+  background-color: #ddd;
+  color: #333;
+  padding: 1em 2em;
+  margin-top: 2.6em; }
+
 @media print {
+  #contact-me {
+    display: none; }
+
   body {
     font-size: 10pt;
     overflow: auto; }
