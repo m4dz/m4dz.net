@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/m4dz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://m4dz.net
+  * I am m4dz (https://keybase.io/m4dz) on keybase.
+  * I have a public key ASA77j_Bxab8oeA9T_xkJDYofMEUI5n6agmL2q7oXMWrOQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01010e0c07d1ac0347eb10824af35fb64fbc32fecb8a61de386f904ff3216c2926d30a",
+      "host": "keybase.io",
+      "kid": "01203bee3fc1c5a6fca1e03d4ffc642436287cc1142399fa6a098bdaaee85cc5ab390a",
+      "uid": "6a7e6c84019c4c5892349ca4393f9100",
+      "username": "m4dz"
+    },
+    "merkle_root": {
+      "ctime": 1592825549,
+      "hash": "4839be8362fe9d2afb1c632f8d49f878d23bf9ed0e868d0ecb4ef8f383f49126625960729b946d794799bf631b959628f52194e700a89a759970863e329aa879",
+      "hash_meta": "497b24056174093d8ada140ffbbafe0f66c04a8eb7e778649fd9a5da5cd85aee",
+      "seqno": 16741332
+    },
+    "service": {
+      "entropy": "1HxmoSwTuw9DpzIYjA0cYOvJ",
+      "hostname": "m4dz.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.1"
+  },
+  "ctime": 1592825578,
+  "expire_in": 504576000,
+  "prev": "5fc07dad0ff2e1842e0f474a9892bd16198fe04e1e46203985c1319802eb2d19",
+  "seqno": 72,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgO+4/wcWm/KHgPU/8ZCQ2KHzBFCOZ+moJi9qu6FzFqzkKp3BheWxvYWTESpcCSMQgX8B9rQ/y4YQuD0dKmJK9FhmP4E4eRiA5hcExmALrLRnEIM7bAu9LBhZzIWMeXUu8GXbjk8p1IHBAD45iuFKycZUAAgHCo3NpZ8RAAmckg5H0XnROInOci8/KcXAr6cn5cU7jX6niMe10/uA4LnXDckTUhl9DucDERaTCco/W6ytMZvMbqmwSq937CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHu5VAoOh8IB1hfXgnKYgjssjr8drW0I20Xx3eTdQJB0o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/m4dz
+
+==================================================================
